@@ -1,0 +1,18 @@
+{
+  "name": "the-grape-vine",
+  "version": "1.0.0",
+  "description": "The Grape Vine is a website where you can create an account and post about various plant care information. \r This helps users log tips and tricks they've discovered that they can reference when raising their plants!",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}
