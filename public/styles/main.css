@@ -1,0 +1,108 @@
+html {
+    /* max-width: 100ch; */
+    padding: 1em 1em;
+    margin: auto;
+    /* line-height: 1.75; */
+    /* font-size: 1.25em; */
+    font-family: sans-serif;
+}
+
+
+/* custom fonts  */
+
+@font-face {
+    font-family: 'TanNimbus';
+    src: url(../fonts/tan-nimbus.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Agrandir';
+    src: url(../fonts/agrandir-regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* element selectors  */
+
+body {
+    background-color: #f9f5f0;
+    color: #1a4d2e;
+    font-family: 'Agrandir', sans-serif;
+}
+
+textarea {
+    resize: none;
+    height: 250px;
+    /* height: 25vh; */
+}
+
+
+/* class selectors  */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.row {
+    width: 100vw;
+    height: 50vh;
+}
+
+.card {
+    height: 100%;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tan-card {
+    background-color: #ebe0c6;
+    color: #1a4d2e;
+}
+
+.card-form {
+    color: #1a4d2e;
+    border: solid 2px #4f6f52;
+    border-radius: 20px;
+    /* width: 300px; */
+}
+
+.green-dropdown {
+    background-color: #c8db9a;
+    color: #1a4d2e;
+    border: solid 2px #4f6f52;
+}
+
+.dropdown-item:hover {
+    background-color: #c8db9a;
+}
+
+.green-button {
+    background-color: #c8db9a;
+    color:#1a4d2e;
+    border: solid 2px #4f6f52;
+    /* border-radius: 20px; */
+    /* padding: 5px 15px; */
+}
+
+.green-button:hover {
+    color: #c8db9a;
+    background-color:#1a4d2e;
+    border: solid 1px #c8db9a;
+}
+
+.heading {
+    font-size: 75px;
+    font-family: 'TanNimbus', serif;
+    color: #4f6f52;
+}
+
+.subheading {
+    font-size: 25px;
+    font-family: 'TanNimbus', serif;
+    color: #4f6f52;
+}
