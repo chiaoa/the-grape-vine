@@ -35,8 +35,7 @@ body {
 
 textarea {
     resize: none;
-    height: 250px;
-    /* height: 25vh; */
+    /* height (rows) specified in html */
 }
 
 
@@ -53,7 +52,7 @@ textarea {
 }
 
 .card {
-    height: 100%;
+    /* height defined with bootstrap */
     width: 70%;
     padding: 10px;
     border-radius: 10px;
