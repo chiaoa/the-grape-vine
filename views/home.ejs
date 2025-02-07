@@ -1,14 +1,14 @@
 <%- include("partials/header.ejs") %>
 
 <!-- home page -->
-<div class="container d-flex align-items-lg-center">
+<div class="container d-flex align-items-lg-center mb-4">
     <div class="row flex-lg-row-reverse">
         <!-- title section  -->
         <div class="col-lg-6 d-flex justify-content-center justify-content-lg-start my-4">
             <div class="w-75 ps-4">
-                <div class="dropdown mb-4 d-flex justify-content-end">
+                <div class="dropdown my-4 d-flex justify-content-end">
                     <form action="/profileSettings" method="GET">
-                        <button class="btn" type="submit">
+                        <button class="btn btn-sm" type="submit">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#4f6f52" class="bi bi-person-circle" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                                 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
@@ -53,11 +53,22 @@
                 </div>
             </div>
         </div>
+        <!-- page down button  -->
+        <% if (locals.posts && posts.length) { %>
+        <div class="d-flex justify-content-end">
+            <a href="#posts">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#4f6f52" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                </svg>
+            </a>
+        </div>
+        <% } %>
     </div>
 </div>
+
 <!-- posts page  -->
 <% if (locals.posts && posts.length) { %>
-<div class="container d-flex justify-content-center justify-content-lg-start bg-opacity-10">
+<div class="container d-flex justify-content-center justify-content-lg-start mb-4" id="posts">
     <h2 class="subheading ms-4 mb-4">Posts</h2>
     <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 mt-4">
         <% posts.forEach(post => { %>

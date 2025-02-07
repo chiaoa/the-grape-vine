@@ -5,6 +5,7 @@ html {
     /* line-height: 1.75; */
     /* font-size: 1.25em; */
     font-family: sans-serif;
+    height: 100%;
 }
 
 
@@ -31,6 +32,7 @@ body {
     background-color: #f9f5f0;
     color: #1a4d2e;
     font-family: 'Agrandir', sans-serif;
+    height: 100%;
 }
 
 textarea {
@@ -41,6 +43,12 @@ textarea {
 button {
     width: 80px;
 }
+
+footer {
+    background-color: #ebe0c675;
+    color: #1a4d2e;
+}
+
 
 /* class selectors  */
 
