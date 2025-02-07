@@ -38,6 +38,9 @@ textarea {
     /* height (rows) specified in html */
 }
 
+button {
+    width: 80px;
+}
 
 /* class selectors  */
 
@@ -52,10 +55,9 @@ textarea {
 }
 
 .card {
-    /* height defined with bootstrap */
     width: 70%;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 42px;
 }
 
 .tan-card {
@@ -66,8 +68,7 @@ textarea {
 .card-form {
     color: #1a4d2e;
     border: solid 2px #4f6f52;
-    border-radius: 20px;
-    /* width: 300px; */
+    border-radius: 24px;
 }
 
 .green-dropdown {
@@ -84,14 +85,22 @@ textarea {
     background-color: #c8db9a;
     color:#1a4d2e;
     border: solid 2px #4f6f52;
-    /* border-radius: 20px; */
-    /* padding: 5px 15px; */
 }
 
 .green-button:hover {
-    color: #c8db9a;
     background-color:#1a4d2e;
-    border: solid 1px #c8db9a;
+    color: #c8db9a;
+}
+
+.red-button {
+    background-color: #d0978b;
+    color: #472118;
+    border: solid 2px #472118;
+}
+
+.red-button:hover {
+    background-color: #472118;
+    color:#d0978b;
 }
 
 .heading {

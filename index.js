@@ -6,13 +6,36 @@ import bodyParser from "body-parser";
 const app = express();
 const port = 3000;
 
+// temporary storage of posts
+const posts = []
+
 // middleware for accessing static project files and parsing the request body
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// class for post objects
+class Post {
+    constructor(title, date, body) {
+        this.title = title;
+        this.date = date
+        this.body = body;
+    }
+}
+
 // render home page
 app.get("/", (req, res) => {
-    res.render("home.ejs");
+    res.render("home.ejs", {posts: posts});
+})
+
+// add post
+app.post("/addPost", (req, res) => {
+    const title = req.body.postTitle;
+    const date = new Date().toLocaleString();
+    const body = req.body.postBody;
+    const newPost = new Post(title, date, body);
+    console.log(newPost)
+    posts.push(newPost);
+    res.redirect("/")
 })
 
 // server setup
