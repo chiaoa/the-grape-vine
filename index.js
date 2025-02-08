@@ -61,6 +61,15 @@ app.post("/updatePost", (req, res) => {
     res.redirect("/")
 })
 
+// delete post route
+app.post("/deletePost", (req, res) => {
+    const index = req.body.postIndex;
+    console.log(index)
+    console.log(posts[index])
+    posts.splice(index, 1);
+    res.redirect("/")
+});
+
 // server setup
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
