@@ -87,6 +87,7 @@
                             </div>
                             <div class="d-flex justify-content-around">
                                 <form action="" method="POST">
+                                    <input class="visually-hidden" name="postIndex" type="number" value="4">
                                     <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 green-button" type="submit">Edit</button>
                                     <button formaction="/deletePost" class="btn rounded-pill p-2 ms-2 ms-xl-4 red-button" type="submit">Delete</button>
                                 </form>
@@ -104,6 +105,7 @@
                             </div>
                             <div class="d-flex justify-content-around">
                                 <form action="" method="POST">
+                                    <input class="visually-hidden" name="postIndex" type="number" value="3">
                                     <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 green-button" type="submit">Edit</button>
                                     <button formaction="/deletePost" class="btn rounded-pill p-2 ms-2 ms-xl-4 red-button" type="submit">Delete</button>
                                 </form>
@@ -121,6 +123,7 @@
                             </div>
                             <div class="d-flex justify-content-around">
                                 <form action="" method="POST">
+                                    <input class="visually-hidden" name="postIndex" type="number" value="2">
                                     <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 green-button" type="submit">Edit</button>
                                     <button formaction="/deletePost" class="btn rounded-pill p-2 ms-2 ms-xl-4 red-button" type="submit">Delete</button>
                                 </form>
@@ -138,10 +141,36 @@
                             </div>
                             <div class="d-flex justify-content-around">
                                 <form action="" method="POST">
+                                    <input class="visually-hidden" name="postIndex" type="number" value="1">
                                     <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 green-button" type="submit">Edit</button>
                                     <button formaction="/deletePost" class="btn rounded-pill p-2 ms-2 ms-xl-4 red-button" type="submit">Delete</button>
                                 </form>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- edit post page  -->
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-10 col-xl-8 col-xxl-7 d-flex justify-content-center">
+                    <div class="card h-lg-80 tan-card">
+                        <div class="card-body">
+                            <h4 class="card-title mb-3">Edit Post</h4>
+                            <form action="/updatePost" method="POST">
+                                <div class="form-floating mb-2">
+                                    <input name="postTitle" type="text" class="form-control card-form" id="postTitle" placeholder="" value="Post 1 Title"/>
+                                    <label for="postTitle" class="form-label">Title</label>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="postBody" class="form-label visually-hidden">Body</label>
+                                    <textarea name="postBody" id="postBody" class="form-control card-form" rows="6" placeholder="Share the latest grape on the vine..."> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </textarea>
+                                </div>
+                                <input class="visually-hidden" name="postIndex" type="number" value="1">
+                                <button class="btn rounded-pill p-2 green-button" type="submit">Post</button>
+                            </form>
                         </div>
                     </div>
                 </div>

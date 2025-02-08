@@ -7,7 +7,7 @@ const app = express();
 const port = 3000;
 
 // temporary storage of posts
-const posts = []
+const posts =[]
 
 // middleware for accessing static project files and parsing the request body
 app.use(express.static("public"));
@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
     res.render("home.ejs", {posts: posts});
 })
 
-// add post
+// add post route
 app.post("/addPost", (req, res) => {
     const title = req.body.postTitle;
     const date = new Date().toLocaleString();
@@ -35,6 +35,29 @@ app.post("/addPost", (req, res) => {
     const newPost = new Post(title, date, body);
     console.log(newPost)
     posts.push(newPost);
+    res.redirect("/")
+})
+
+// edit post route
+app.post("/editPost", (req, res) => {
+    const index = req.body.postIndex
+    const currentPost = posts[index];
+    console.log(currentPost);
+    res.render("edit.ejs", {
+        posts: posts,
+        post: currentPost
+    });
+});
+
+// update post route
+app.post("/updatePost", (req, res) => {
+    const title = req.body.postTitle;
+    const date = new Date().toLocaleString();
+    const body = req.body.postBody;
+    const newPost = new Post(title, date, body);
+    console.log(newPost)
+    const index = req.body.postIndex;
+    posts[index] = newPost;
     res.redirect("/")
 })
 

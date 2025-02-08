@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs") %>
+
+<!-- edit post page  -->
+<% if (locals.posts && locals.post) { %>
+<div class="container d-flex align-items-center justify-content-center">
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-10 col-xl-8 col-xxl-7 d-flex justify-content-center">
+            <div class="card h-lg-80 tan-card">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">Edit Post</h4>
+                    <form action="/updatePost" method="POST">
+                        <div class="form-floating mb-2">
+                            <input name="postTitle" type="text" class="form-control card-form" id="postTitle" placeholder="" value="<%= post.title %>"/>
+                            <label for="postTitle" class="form-label">Title</label>
+                        </div>
+                        <div class="mb-3">
+                            <label for="postBody" class="form-label visually-hidden">Body</label>
+                            <textarea name="postBody" id="postBody" class="form-control card-form" rows="6" placeholder="Share the latest grape on the vine..."> <%= post.body %> </textarea>
+                        </div>
+                        <input class="visually-hidden" name="postIndex" type="number" value="<%= posts.indexOf(post) %>">
+                        <button class="btn rounded-pill p-2 green-button" type="submit">Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% } %>
+
+
+
+<%- include("partials/footer.ejs") %>

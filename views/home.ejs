@@ -82,6 +82,7 @@
                     </div>
                     <div class="d-flex justify-content-around">
                         <form action="" method="POST">
+                            <input class="visually-hidden" name="postIndex" type="number" value="<%= posts.indexOf(post) %>">
                             <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 green-button" type="submit">Edit</button>
                             <button formaction="/deletePost" class="btn rounded-pill p-2 ms-2 ms-xl-4 red-button" type="submit">Delete</button>
                         </form>
