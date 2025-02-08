@@ -17,7 +17,7 @@
                             <label for="postBody" class="form-label visually-hidden">Body</label>
                             <textarea name="postBody" id="postBody" class="form-control card-form" rows="6" placeholder="Share the latest grape on the vine..."> <%= post.body %> </textarea>
                         </div>
-                        <input class="visually-hidden" name="postIndex" type="number" value="<%= posts.indexOf(post) %>">
+                        <input class="visually-hidden" name="postIndex" type="number" aria-label="hidden element" aria-hidden="true" value="<%= posts.indexOf(post) %>">
                         <button class="btn rounded-pill p-2 green-button" type="submit" aria-label="update post">Update</button>
                     </form>
                 </div>

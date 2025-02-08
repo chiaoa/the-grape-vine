@@ -57,6 +57,7 @@
         <% if (locals.posts && posts.length) { %>
         <div class="d-flex justify-content-end">
             <a href="#posts" aria-label="pagedown button">
+                <span class="visually-hidden">Go Down</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#4f6f52" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
                 </svg>
@@ -82,7 +83,7 @@
                     </div>
                     <div class="d-flex justify-content-around">
                         <form action="" method="POST">
-                            <input class="visually-hidden" name="postIndex" type="number" value="<%= index %>">
+                            <input class="visually-hidden" name="postIndex" type="number" aria-label="hidden element" aria-hidden="true" value="<%= index %>">
                             <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 green-button" type="submit" aria-label="edit post">Edit</button>
                             <button class="btn rounded-pill p-2 ms-2 ms-xl-4 red-button" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal<%= index %>" aria-label="delete post">Delete</button>
                             <!-- modal for delete button confirmation -->
