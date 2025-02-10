@@ -21,7 +21,7 @@
                         </svg>
                     </button>
                     <ul class="dropdown-menu green-dropdown">
-                      <li><a class="dropdown-item" href="/login">Sign In</a></li>
+                      <li><a class="dropdown-item" href="/loginPage">Sign In</a></li>
                       <li><hr class="dropdown-divider"/></li>
                       <li><a class="dropdown-item" href="/logout">Log Out</a></li>
                     </ul>
@@ -84,8 +84,8 @@
                     <div class="d-flex justify-content-around">
                         <form action="" method="POST">
                             <input class="visually-hidden" name="postIndex" type="number" aria-label="hidden element" aria-hidden="true" value="<%= index %>">
-                            <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 green-button" type="submit" aria-label="edit post">Edit</button>
-                            <button class="btn rounded-pill p-2 ms-2 ms-xl-4 red-button" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal<%= index %>" aria-label="delete post">Delete</button>
+                            <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 me-xxl-2 green-button" type="submit" aria-label="edit post">Edit</button>
+                            <button class="btn rounded-pill p-2 ms-2 ms-xl-4 ms-xxl-2 red-button" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal<%= index %>" aria-label="delete post">Delete</button>
                             <!-- modal for delete button confirmation -->
                             <div class="modal" id="deleteModal<%= index %>" tabindex="-1" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">

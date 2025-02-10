@@ -27,6 +27,11 @@ app.get("/", (req, res) => {
     res.render("home.ejs", {posts: posts});
 })
 
+// render login/signup page
+app.get("/loginPage", (req, res) => {
+    res.render("login.ejs");
+})
+
 // add post route
 app.post("/addPost", (req, res) => {
     const title = req.body.postTitle;

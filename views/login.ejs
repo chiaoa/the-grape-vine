@@ -1,0 +1,46 @@
+<%- include('partials/header.ejs') %>
+
+<!-- sign in/sign up page  -->
+<div class="container d-flex align-items-center">
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-5 d-flex justify-content-center">
+            <div class="card h-75 mb-3 mb-lg-0 ms-lg-4 tan-card">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Log In</h3>
+                    <form action="/login" method="POST">
+                        <div class="form-floating mb-2">
+                            <input name="loginUsername" type="text" class="form-control card-form" id="loginUsername" placeholder="" />
+                            <label for="loginUsername" class="form-label">Username</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input name="loginPassword" type="password" class="form-control card-form" id="loginPassword" placeholder="" />
+                            <label for="loginPassword" class="form-label">Password</label>
+                        </div>
+                        <button class="btn rounded-pill p-2 green-button" type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1 text-center p-2 p-lg-0"><h5>OR</h5></div>
+        <div class="col-lg-5 d-flex justify-content-center">
+            <div class="card h-75 mt-3 mt-lg-0 me-lg-4 dark-green-card">
+                <div class="card-body">
+                    <h3 class="card-title mb-3 text-center light-green-text">Sign Up</h3>
+                    <form action="/register" method="POST">
+                        <div class="form-floating mb-2">
+                            <input name="email" type="email" class="form-control card-form" id="email" placeholder="" />
+                            <label for="email" class="form-label">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input name="registerPassword" type="password" class="form-control card-form" id="registerPassword" placeholder="" />
+                            <label for="registerpassword" class="form-label">Password</label>
+                        </div>
+                        <button class="btn rounded-pill p-2 green-button" type="submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer.ejs') %>

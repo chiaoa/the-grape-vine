@@ -11,7 +11,7 @@
     <main>
         <!-- home page  -->
         <div class="container d-flex align-items-lg-center mb-4">
-            <div class="row flex-lg-row-reverse">
+            <div class="row h-50 flex-lg-row-reverse">
                 <!-- title section  -->
                 <div class="col-lg-6 d-flex justify-content-center justify-content-lg-start my-4">
                     <div class="w-75 ps-4">
@@ -45,7 +45,7 @@
                 </div>
                 <!-- new post section -->
                 <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-lg-center">
-                    <div class="card h-lg-80 me-lg-4 tan-card">
+                    <div class="card me-lg-4 tan-card">
                         <div class="card-body">
                             <h4 class="card-title mb-3">Create a new post!</h4>
                             <form action="/addPost" method="POST">
@@ -77,7 +77,7 @@
         <!-- posts page  -->
         <div class="container d-flex justify-content-center justify-content-lg-start mb-4" id="posts">
             <h2 class="subheading m-4 mx-xxl-2">Posts</h2>
-            <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 mt-4">
+            <div class="row h-50 row-cols-1 row-cols-lg-2 row-cols-xxl-3 mt-4">
                 <div class="col my-4">
                     <div class="card tan-card">
                         <div class="card-body">
@@ -89,8 +89,8 @@
                             <div class="d-flex justify-content-around">
                                 <form action="" method="POST">
                                     <input class="visually-hidden" name="postIndex" type="number" aria-label="hidden element" aria-hidden="true" value="4">
-                                    <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 green-button" type="submit">Edit</button>
-                                    <button class="btn rounded-pill p-2 ms-2 ms-xl-4 red-button" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal4" aria-label="delete post">Delete</button>
+                                    <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 me-xxl-2 green-button" type="submit">Edit</button>
+                                    <button class="btn rounded-pill p-2 ms-2 ms-xl-4 ms-xxl-2 red-button" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal4" aria-label="delete post">Delete</button>
                                     <!-- modal for delete button confirmation -->
                                     <div class="modal" id="deleteModal4" tabindex="-1" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
@@ -103,8 +103,8 @@
                                                     <h5 class="text-center">"Post 4 Title"?</h5>
                                                 </div>
                                                 <div class="modal-footer d-flex justify-content-around">
-                                                    <button class="btn rounded-pill p-2 me-2 me-xl-4 green-button" type="button" data-bs-dismiss="modal" aria-label="Go back">Back</button>
-                                                    <button formaction="/deletePost" class="btn rounded-pill p-2 ms-2 ms-xl-4 red-button" type="submit" aria-label="delete post">Delete</button>
+                                                    <button class="btn rounded-pill p-2 me-2 me-xl-4 me-xxl-2 green-button" type="button" data-bs-dismiss="modal" aria-label="Go back">Back</button>
+                                                    <button formaction="/deletePost" class="btn rounded-pill p-2 ms-2 ms-xl-4 ms-xxl-2 red-button" type="submit" aria-label="delete post">Delete</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -125,8 +125,8 @@
                             <div class="d-flex justify-content-around">
                                 <form action="" method="POST">
                                     <input class="visually-hidden" name="postIndex" type="number" aria-label="hidden element" aria-hidden="true" value="4">
-                                    <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 green-button" type="submit">Edit</button>
-                                    <button class="btn rounded-pill p-2 ms-2 ms-xl-4 red-button" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal3" aria-label="delete post">Delete</button>
+                                    <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 me-xxl-2 green-button" type="submit">Edit</button>
+                                    <button class="btn rounded-pill p-2 ms-2 ms-xl-4 ms-xxl-2 red-button" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal3" aria-label="delete post">Delete</button>
                                     <!-- modal for delete button confirmation -->
                                     <div class="modal" id="deleteModal3" tabindex="-1" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
@@ -139,8 +139,8 @@
                                                     <h5 class="text-center">"Post 3 Title"?</h5>
                                                 </div>
                                                 <div class="modal-footer d-flex justify-content-around">
-                                                    <button class="btn rounded-pill p-2 me-2 me-xl-4 green-button" type="button" data-bs-dismiss="modal" aria-label="Go back">Back</button>
-                                                    <button formaction="/deletePost" class="btn rounded-pill p-2 ms-2 ms-xl-4 red-button" type="submit" aria-label="delete post">Delete</button>
+                                                    <button class="btn rounded-pill p-2 me-2 me-xl-4 me-xxl-2 green-button" type="button" data-bs-dismiss="modal" aria-label="Go back">Back</button>
+                                                    <button formaction="/deletePost" class="btn rounded-pill p-2 ms-2 ms-xl-4 ms-xxl-2 red-button" type="submit" aria-label="delete post">Delete</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -161,8 +161,8 @@
                             <div class="d-flex justify-content-around">
                                 <form action="" method="POST">
                                     <input class="visually-hidden" name="postIndex" type="number" aria-label="hidden element" aria-hidden="true" value="4">
-                                    <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 green-button" type="submit">Edit</button>
-                                    <button class="btn rounded-pill p-2 ms-2 ms-xl-4 red-button" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal2" aria-label="delete post">Delete</button>
+                                    <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 me-xxl-2 green-button" type="submit">Edit</button>
+                                    <button class="btn rounded-pill p-2 ms-2 ms-xl-4 ms-xxl-2 red-button" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal2" aria-label="delete post">Delete</button>
                                     <!-- modal for delete button confirmation -->
                                     <div class="modal" id="deleteModal2" tabindex="-1" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
@@ -175,8 +175,8 @@
                                                     <h5 class="text-center">"Post 2 Title"?</h5>
                                                 </div>
                                                 <div class="modal-footer d-flex justify-content-around">
-                                                    <button class="btn rounded-pill p-2 me-2 me-xl-4 green-button" type="button" data-bs-dismiss="modal" aria-label="Go back">Back</button>
-                                                    <button formaction="/deletePost" class="btn rounded-pill p-2 ms-2 ms-xl-4 red-button" type="submit" aria-label="delete post">Delete</button>
+                                                    <button class="btn rounded-pill p-2 me-2 me-xl-4 me-xxl-2 green-button" type="button" data-bs-dismiss="modal" aria-label="Go back">Back</button>
+                                                    <button formaction="/deletePost" class="btn rounded-pill p-2 ms-2 ms-xl-4 ms-xxl-2 red-button" type="submit" aria-label="delete post">Delete</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -197,8 +197,8 @@
                             <div class="d-flex justify-content-around">
                                 <form action="" method="POST">
                                     <input class="visually-hidden" name="postIndex" type="number" aria-label="hidden element" aria-hidden="true" value="4">
-                                    <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 green-button" type="submit">Edit</button>
-                                    <button class="btn rounded-pill p-2 ms-2 ms-xl-4 red-button" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal1" aria-label="delete post">Delete</button>
+                                    <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 me-xxl-2 green-button" type="submit">Edit</button>
+                                    <button class="btn rounded-pill p-2 ms-2 ms-xl-4 ms-xxl-2 red-button" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal1" aria-label="delete post">Delete</button>
                                     <!-- modal for delete button confirmation -->
                                     <div class="modal" id="deleteModal1" tabindex="-1" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
@@ -211,8 +211,8 @@
                                                     <h5 class="text-center">"Post 1 Title"?</h5>
                                                 </div>
                                                 <div class="modal-footer d-flex justify-content-around">
-                                                    <button class="btn rounded-pill p-2 me-2 me-xl-4 green-button" type="button" data-bs-dismiss="modal" aria-label="Go back">Back</button>
-                                                    <button formaction="/deletePost" class="btn rounded-pill p-2 ms-2 ms-xl-4 red-button" type="submit" aria-label="delete post">Delete</button>
+                                                    <button class="btn rounded-pill p-2 me-2 me-xl-4 me-xxl-2 green-button" type="button" data-bs-dismiss="modal" aria-label="Go back">Back</button>
+                                                    <button formaction="/deletePost" class="btn rounded-pill p-2 ms-2 ms-xl-4 ms-xxl-2 red-button" type="submit" aria-label="delete post">Delete</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -229,9 +229,9 @@
         <div class="container d-flex align-items-center justify-content-center">
             <div class="row d-flex align-items-center justify-content-center">
                 <div class="col-10 col-xl-8 col-xxl-7 d-flex justify-content-center">
-                    <div class="card h-lg-80 tan-card">
+                    <div class="card tan-card">
                         <div class="card-body">
-                            <h4 class="card-title mb-3">Edit Post</h4>
+                            <h3 class="card-title mb-3">Edit Post</h3>
                             <form action="/updatePost" method="POST">
                                 <div class="form-floating mb-2">
                                     <input name="postTitle" type="text" class="form-control card-form" id="postTitle" placeholder="" value="Post 1 Title"/>
@@ -249,6 +249,50 @@
                 </div>
             </div>
         </div>
+
+        <!-- sign in/sign up page  -->
+        <div class="container d-flex align-items-center">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-5 d-flex justify-content-center">
+                    <div class="card h-75 mb-3 mb-lg-0 ms-lg-4 tan-card">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Log In</h3>
+                            <form action="/login" method="POST">
+                                <div class="form-floating mb-2">
+                                    <input name="loginUsername" type="text" class="form-control card-form" id="loginUsername" placeholder="" />
+                                    <label for="loginUsername" class="form-label">Username</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input name="loginPassword" type="password" class="form-control card-form" id="loginPassword" placeholder="" />
+                                    <label for="loginPassword" class="form-label">Password</label>
+                                </div>
+                                <button class="btn rounded-pill p-2 green-button" type="submit">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 text-center p-2 p-lg-0"><h5>OR</h5></div>
+                <div class="col-lg-5 d-flex justify-content-center">
+                    <div class="card h-75 mt-3 mt-lg-0 me-lg-4 dark-green-card">
+                        <div class="card-body">
+                            <h3 class="card-title mb-3 text-center">Sign Up</h3>
+                            <form action="/register" method="POST">
+                                <div class="form-floating mb-2">
+                                    <input name="email" type="email" class="form-control card-form" id="email" placeholder="" />
+                                    <label for="email" class="form-label">Email</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input name="registerPassword" type="password" class="form-control card-form" id="registerPassword" placeholder="" />
+                                    <label for="registerpassword" class="form-label">Password</label>
+                                </div>
+                                <button class="btn rounded-pill p-2 green-button" type="submit">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer class="w-100 p-2 position-fixed bottom-0">
         <p class="m-0 pe-4 text-end">© 2025 The Grape Vine</p>
