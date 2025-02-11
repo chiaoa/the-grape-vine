@@ -11,26 +11,26 @@
     <main>
         <!-- home page  -->
         <div class="container d-flex align-items-lg-center mb-4">
-            <div class="row h-50 flex-lg-row-reverse">
+            <div class="row flex-lg-row-reverse">
                 <!-- title section  -->
                 <div class="col-lg-6 d-flex justify-content-center justify-content-lg-start my-4">
                     <div class="w-75 ps-4">
                         <div class="dropdown my-4 d-flex justify-content-end">
                             <form action="/profileSettings" method="GET">
-                                <button class="btn btn-sm" type="submit" aria-label="profile settings">
+                                <button class="btn" type="submit" aria-label="profile settings">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#4f6f52" class="bi bi-person-circle" viewBox="0 0 16 16">
                                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                                     </svg>
                                 </button>
                             </form>
-                            <button class="btn btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="sign in/logout dropdown">
+                            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="sign in/logout dropdown">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#4f6f52" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
                                 </svg>
                             </button>
                             <ul class="dropdown-menu green-dropdown">
-                              <li><a class="dropdown-item" href="/login">Sign In</a></li>
+                              <li><a class="dropdown-item" href="/loginPage">Sign In</a></li>
                               <li><hr class="dropdown-divider"/></li>
                               <li><a class="dropdown-item" href="/logout">Log Out</a></li>
                             </ul>
@@ -256,34 +256,49 @@
                 <div class="col-lg-5 d-flex justify-content-center">
                     <div class="card h-75 mb-3 mb-lg-0 ms-lg-4 tan-card">
                         <div class="card-body">
-                            <h3 class="card-title text-center">Log In</h3>
+                            <h3 class="card-title mb-3 text-center">Sign In</h3>
                             <form action="/login" method="POST">
                                 <div class="form-floating mb-2">
                                     <input name="loginUsername" type="text" class="form-control card-form" id="loginUsername" placeholder="" />
                                     <label for="loginUsername" class="form-label">Username</label>
                                 </div>
-                                <div class="form-floating mb-3">
+                                <div class="form-floating mb-2">
                                     <input name="loginPassword" type="password" class="form-control card-form" id="loginPassword" placeholder="" />
                                     <label for="loginPassword" class="form-label">Password</label>
                                 </div>
-                                <button class="btn rounded-pill p-2 green-button" type="submit">Login</button>
+                                <div class="d-flex align-items-center mb-3" style="height: 58px;">
+                                    <div class="form-check">
+                                        <input class="form-check-input card-form" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">Remember me</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button class="btn rounded-pill p-2 green-button" type="submit">Login</button>
+                                    <strong class="ps-lg-4"><a href="/resetPassword" class="dark-green-text">Forgot Password?</a></strong>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-1 text-center p-2 p-lg-0"><h5>OR</h5></div>
+                <div class="col-lg-1 text-center p-2 p-lg-0">
+                    <h5>OR</h5>
+                </div>
                 <div class="col-lg-5 d-flex justify-content-center">
                     <div class="card h-75 mt-3 mt-lg-0 me-lg-4 dark-green-card">
                         <div class="card-body">
-                            <h3 class="card-title mb-3 text-center">Sign Up</h3>
+                            <h3 class="card-title mb-3 text-center light-green-text">Sign Up</h3>
                             <form action="/register" method="POST">
                                 <div class="form-floating mb-2">
                                     <input name="email" type="email" class="form-control card-form" id="email" placeholder="" />
                                     <label for="email" class="form-label">Email</label>
                                 </div>
-                                <div class="form-floating mb-3">
+                                <div class="form-floating mb-2">
                                     <input name="registerPassword" type="password" class="form-control card-form" id="registerPassword" placeholder="" />
-                                    <label for="registerpassword" class="form-label">Password</label>
+                                    <label for="registerPassword" class="form-label">Password</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input name="confirmPassword" type="password" class="form-control card-form" id="confirmPassword" placeholder="" />
+                                    <label for="confirmPassword" class="form-label">Confirm Password</label>
                                 </div>
                                 <button class="btn rounded-pill p-2 green-button" type="submit">Register</button>
                             </form>

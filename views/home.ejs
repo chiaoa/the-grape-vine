@@ -8,14 +8,14 @@
             <div class="w-75 ps-4">
                 <div class="dropdown my-4 d-flex justify-content-end">
                     <form action="/profileSettings" method="GET">
-                        <button class="btn btn-sm" type="submit" aria-label="profile settings">
+                        <button class="btn" type="submit" aria-label="profile settings">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#4f6f52" class="bi bi-person-circle" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                                 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                             </svg>
                         </button>
                     </form>
-                    <button class="btn btn-sm" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="sign in/logout dropdown">
+                    <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="sign in/logout dropdown">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#4f6f52" class="bi bi-chevron-down" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
                         </svg>
@@ -36,7 +36,7 @@
         </div>
         <!-- new post section -->
         <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-lg-center">
-            <div class="card h-lg-80 me-lg-4 tan-card">
+            <div class="card me-lg-4 tan-card">
                 <div class="card-body">
                     <h4 class="card-title mb-3">Create a new post!</h4>
                     <form action="/addPost" method="POST">
@@ -71,7 +71,7 @@
 <% if (locals.posts && posts.length) { %>
 <div class="container d-flex justify-content-center justify-content-lg-start mb-4" id="posts">
     <h2 class="subheading m-4 mx-xxl-2">Posts</h2>
-    <div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 mt-4">
+    <div class="row h-50 row-cols-1 row-cols-lg-2 row-cols-xxl-3 mt-4">
         <% posts.forEach((post, index) => { %>
         <div class="col my-4">
             <div class="card tan-card">
@@ -98,8 +98,8 @@
                                             <h5 class="text-center">"<%= post.title %>"?</h5>
                                         </div>
                                         <div class="modal-footer d-flex justify-content-around">
-                                            <button class="btn rounded-pill p-2 me-2 me-xl-4 green-button" type="button" data-bs-dismiss="modal" aria-label="Go back">Back</button>
-                                            <button formaction="/deletePost" class="btn rounded-pill p-2 ms-2 ms-xl-4 red-button" type="submit" aria-label="delete post">Delete</button>
+                                            <button class="btn rounded-pill p-2 me-2 me-xl-4 me-xxl-2 green-button" type="button" data-bs-dismiss="modal" aria-label="Go back">Back</button>
+                                            <button formaction="/deletePost" class="btn rounded-pill p-2 ms-2 ms-xl-4 ms-xxl-2 red-button" type="submit" aria-label="delete post">Delete</button>
                                         </div>
                                     </div>
                                 </div>
