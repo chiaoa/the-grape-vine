@@ -95,6 +95,7 @@ footer {
     background-color: #c8db9a;
     color: #1a4d2e;
     border: solid 2px #4f6f52;
+    min-width: 5rem;
 }
 
 .dropdown-item:hover {

@@ -63,7 +63,7 @@
                     </div>
                 </div>
                 <!-- page down button  -->
-                <div class="d-flex justify-content-end">
+                <div class="d-flex justify-content-end animate__animated animate__slow animate__shakeY">
                     <a href="#posts" aria-label="pagedown button">
                         <span class="visually-hidden">Go Down</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#4f6f52" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
@@ -75,9 +75,9 @@
         </div>
 
         <!-- posts page  -->
-        <div class="container d-flex justify-content-center justify-content-lg-start mb-4" id="posts">
+        <div class="container h-100 d-flex justify-content-center justify-content-lg-start mb-4" id="posts">
             <h2 class="subheading m-4 mx-xxl-2">Posts</h2>
-            <div class="row h-50 row-cols-1 row-cols-lg-2 row-cols-xxl-3 mt-4">
+            <div class="row pb-5 h-50 row-cols-1 row-cols-lg-2 row-cols-xxl-3 mt-4">
                 <div class="col my-4">
                     <div class="card tan-card">
                         <div class="card-body">
@@ -89,7 +89,7 @@
                             <div class="d-flex justify-content-around">
                                 <form action="" method="POST">
                                     <input class="visually-hidden" name="postIndex" type="number" aria-label="hidden element" aria-hidden="true" value="4">
-                                    <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 me-xxl-2 green-button" type="submit">Edit</button>
+                                    <button formaction="/editPost" class="btn rounded-pill p-2 me-md-2 me-xl-4 me-xxl-2 green-button" type="submit">Edit</button>
                                     <button class="btn rounded-pill p-2 ms-2 ms-xl-4 ms-xxl-2 red-button" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal4" aria-label="delete post">Delete</button>
                                     <!-- modal for delete button confirmation -->
                                     <div class="modal" id="deleteModal4" tabindex="-1" aria-hidden="true">
@@ -125,7 +125,7 @@
                             <div class="d-flex justify-content-around">
                                 <form action="" method="POST">
                                     <input class="visually-hidden" name="postIndex" type="number" aria-label="hidden element" aria-hidden="true" value="4">
-                                    <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 me-xxl-2 green-button" type="submit">Edit</button>
+                                    <button formaction="/editPost" class="btn rounded-pill p-2 me-md-2 me-xl-4 me-xxl-2 green-button" type="submit">Edit</button>
                                     <button class="btn rounded-pill p-2 ms-2 ms-xl-4 ms-xxl-2 red-button" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal3" aria-label="delete post">Delete</button>
                                     <!-- modal for delete button confirmation -->
                                     <div class="modal" id="deleteModal3" tabindex="-1" aria-hidden="true">
@@ -161,7 +161,7 @@
                             <div class="d-flex justify-content-around">
                                 <form action="" method="POST">
                                     <input class="visually-hidden" name="postIndex" type="number" aria-label="hidden element" aria-hidden="true" value="4">
-                                    <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 me-xxl-2 green-button" type="submit">Edit</button>
+                                    <button formaction="/editPost" class="btn rounded-pill p-2 me-md-2 me-xl-4 me-xxl-2 green-button" type="submit">Edit</button>
                                     <button class="btn rounded-pill p-2 ms-2 ms-xl-4 ms-xxl-2 red-button" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal2" aria-label="delete post">Delete</button>
                                     <!-- modal for delete button confirmation -->
                                     <div class="modal" id="deleteModal2" tabindex="-1" aria-hidden="true">
@@ -197,7 +197,7 @@
                             <div class="d-flex justify-content-around">
                                 <form action="" method="POST">
                                     <input class="visually-hidden" name="postIndex" type="number" aria-label="hidden element" aria-hidden="true" value="4">
-                                    <button formaction="/editPost" class="btn rounded-pill p-2 me-2 me-xl-4 me-xxl-2 green-button" type="submit">Edit</button>
+                                    <button formaction="/editPost" class="btn rounded-pill p-2 me-md-2 me-xl-4 me-xxl-2 green-button" type="submit">Edit</button>
                                     <button class="btn rounded-pill p-2 ms-2 ms-xl-4 ms-xxl-2 red-button" type="button" data-bs-toggle="modal" data-bs-target="#deleteModal1" aria-label="delete post">Delete</button>
                                     <!-- modal for delete button confirmation -->
                                     <div class="modal" id="deleteModal1" tabindex="-1" aria-hidden="true">
@@ -222,6 +222,15 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- page up button  -->
+            <div class="d-flex mb-5 pb-4 sticky-bottom justify-content-end align-items-end">
+                <a href="#posts" aria-label="pageup button">
+                    <span class="visually-hidden">Go Up</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#4f6f52" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+                    </svg>
+                </a>
             </div>
         </div>
 
